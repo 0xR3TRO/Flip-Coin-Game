@@ -1,120 +1,120 @@
-## Opis projektu
+## Project Description
 
-### Cel:
+### Goal:
 
-Projekt "Flip Coin Game" ma na celu dostarczenie użytkownikom interaktywnej gry przeglądarkowej, która umożliwia obstawianie wyniku rzutu monetą i zliczanie wyników. Aplikacja ma być prosta, szybka i intuicyjna, zachęcając użytkowników do krótkich, rozrywkowych sesji gry.
+The "Flip Coin Game" project aims to provide users with an interactive browser-based game that allows them to bet on the result of a coin toss and keep track of their scores. The application should be simple, fast, and intuitive, encouraging users to enjoy quick, entertaining gaming sessions.
 
-### Opis funkcji:
+### Features:
 
-- **Rzut monetą:** Użytkownicy mogą obstawiać, czy wynik rzutu monetą będzie "Orzeł" czy "Reszka".
-- **Zliczanie wyników:** Aplikacja zlicza i wyświetla statystyki wygranych oraz przegranych.
-- **Historia rzutów:** Możliwość przeglądania historii wcześniejszych rzutów monetą.
-- **Udostępnianie wyników:** Opcja udostępniania wyników na platformach społecznościowych.
+- **Coin Toss:** Users can bet on whether the coin will land on "Heads" or "Tails".
+- **Score Tracking:** The application counts and displays statistics of wins and losses.
+- **Toss History:** Users can view the history of previous coin tosses.
+- **Sharing Results:** Users can share their results on social media platforms.
 
-## Analiza wymagań:
+## Requirements Analysis:
 
-### Wymagania funkcjonalne:
+### Functional Requirements:
 
-- **Rzut monetą:** Użytkownik może wybrać opcję "Orzeł" lub "Reszka" przed każdym rzutem.
-- **Zliczanie wyników:** Aplikacja zlicza wygrane i przegrane użytkownika w czasie rzeczywistym.
-- **Historia rzutów:** Przechowywanie i wyświetlanie historii rzutów, umożliwiając użytkownikowi przeglądanie wyników.
-- **Udostępnianie wyników:** Użytkownik może udostępniać swoje wyniki na platformach społecznościowych.
+- **Coin Toss:** Users can select "Heads" or "Tails" before each toss.
+- **Score Tracking:** The application counts wins and losses in real-time.
+- **Toss History:** The application stores and displays the history of coin tosses, allowing users to review results.
+- **Sharing Results:** Users can share their results on social media platforms.
 
-### Wymagania niefunkcjonalne:
+### Non-Functional Requirements:
 
-- **Responsywność:** Aplikacja powinna działać płynnie i szybko, bez opóźnień.
-- **Interfejs użytkownika:** Przyjazny, intuicyjny interfejs, który jest łatwy do zrozumienia i obsługi.
-- **Skalowalność:** Aplikacja powinna obsługiwać wielu użytkowników jednocześnie bez utraty wydajności.
+- **Responsiveness:** The application should run smoothly and quickly, without delays.
+- **User Interface:** A friendly, intuitive interface that is easy to understand and use.
+- **Scalability:** The application should support multiple users simultaneously without losing performance.
 
-## Projekt interfejsu:
+## User Interface Design:
 
-### Szkice/wizualizacje interfejsu:
+### Sketches/Visualizations:
 
-- _Strona główna:_ Ekran powitalny z przyciskiem "Rozpocznij grę" oraz podglądem statystyk użytkownika.
-- _Okno gry:_ Ekran z przyciskami "Orzeł" i "Reszka", oraz sekcja wyświetlająca wynik ostatniego rzutu.
-- _Historia rzutów:_ Lista z wynikami poprzednich rzutów wraz z datami i godzinami.
+- _Home Page:_ A welcome screen with a "Start Game" button and a preview of the user's statistics.
+- _Game Window:_ A screen with "Heads" and "Tails" buttons, and a section displaying the result of the last toss.
+- _Toss History:_ A list showing the results of previous tosses with dates and times.
 
-### Mapa strony:
+### Site Map:
 
-- _Strona główna_
-  - Przyciski "Rozpocznij grę" i "Historia rzutów"
-  - Statystyki wygranych i przegranych
-- _Okno gry_
-  - Przyciski "Orzeł" i "Reszka"
-  - Wynik ostatniego rzutu
-- _Historia rzutów_
-  - Lista wyników rzutów
+- _Home Page_
+  - "Start Game" and "Toss History" buttons
+  - Win/Loss statistics
+- _Game Window_
+  - "Heads" and "Tails" buttons
+  - Last toss result
+- _Toss History_
+  - List of toss results
 
-## Architektura systemu:
+## System Architecture:
 
-### Opis struktury danych:
+### Data Structure Description:
 
-Aplikacja przechowuje dane dotyczące rzutów monetą, w tym:
+The application stores data related to coin tosses, including:
 
-- **Parametry rzutów:** Informacje o wybranej przez użytkownika opcji (Orzeł/Reszka).
-- **Wyniki:** Zapis wyników poszczególnych rzutów wraz z datami i godzinami.
-- **Statystyki:** Liczba wygranych i przegranych.
+- **Toss Parameters:** Information about the user’s choice (Heads/Tails).
+- **Results:** Records of toss results with dates and times.
+- **Statistics:** Count of wins and losses.
 
-### Diagramy architektury:
+### Architecture Diagrams:
 
-Architektura oparta jest na modelu MVC (Model-View-Controller), gdzie:
+The architecture is based on the MVC (Model-View-Controller) model, where:
 
-- **Model:** Odpowiada za logikę gry i zarządzanie danymi.
-- **Widok (View):** Prezentuje interfejs użytkownika.
-- **Kontroler (Controller):** Zarządza komunikacją między modelem a widokiem.
+- **Model:** Handles game logic and data management.
+- **View:** Presents the user interface.
+- **Controller:** Manages communication between the model and the view.
 
-## Implementacja:
+## Implementation:
 
-### Opis technologii:
+### Technology Description:
 
 - **Frontend:** HTML, CSS, JavaScript (React.js).
 - **Backend:** Node.js (Express.js).
-- **Baza danych:** MongoDB (przechowywanie danych o rzutach i statystykach).
+- **Database:** MongoDB (for storing toss data and statistics).
 
-### Struktura kodu:
+### Code Structure:
 
-- _Katalogi/pliki_: Oddzielne pliki dla logiki gry, interfejsu, zarządzania danymi.
-- _Style pisania kodu_: Zastosowanie modularności, czytelności i komentarzy w kodzie.
+- _Directories/Files_: Separate files for game logic, interface, data management.
+- _Coding Style_: Use of modularity, readability, and comments in the code.
 
-## Testowanie:
+## Testing:
 
-### Plan testów:
+### Test Plan:
 
-- **Testy jednostkowe:** Sprawdzenie poprawności funkcji rzutów i zliczania wyników.
-- **Testy integracyjne:** Upewnienie się, że komponenty współpracują ze sobą poprawnie.
-- **Testy interfejsu użytkownika:** Sprawdzenie interakcji z użytkownikiem na różnych urządzeniach.
-- **Testy wydajnościowe:** Ocena wydajności aplikacji przy dużej liczbie jednoczesnych użytkowników.
+- **Unit Tests:** Check the correctness of toss and score-tracking functions.
+- **Integration Tests:** Ensure that components work together correctly.
+- **User Interface Tests:** Verify user interactions on different devices.
+- **Performance Tests:** Evaluate application performance under high user load.
 
-### Procedury testowania:
+### Testing Procedures:
 
-- Opracowanie zestawu przypadków testowych dla każdej funkcji aplikacji.
-- Ustalenie procedur raportowania i naprawiania znalezionych błędów.
+- Develop a set of test cases for each application function.
+- Establish procedures for reporting and fixing identified bugs.
 
-## Wdrożenie i konserwacja:
+## Deployment and Maintenance:
 
-### Plan wdrożenia:
+### Deployment Plan:
 
-- **Etapy wdrażania:** Testowanie, poprawki, publikacja na platformach dostępnych dla użytkowników.
-- **Terminy:** Określenie dat planowanych etapów.
+- **Deployment Stages:** Testing, bug fixes, release on platforms accessible to users.
+- **Timeline:** Define dates for each planned stage.
 
-### Procedury konserwacji:
+### Maintenance Procedures:
 
-- **Wsparcie techniczne:** Ustanowienie kanałów komunikacji z użytkownikami w celu zgłaszania problemów.
-- **Aktualizacje:** Planowanie regularnych aktualizacji w zależności od potrzeb i feedbacku użytkowników.
+- **Technical Support:** Establish communication channels for users to report issues.
+- **Updates:** Plan regular updates based on user needs and feedback.
 
-## Harmonogram:
+## Schedule:
 
-### Plan projektu:
+### Project Plan:
 
-- **Etapy realizacji:** Podział prac na konkretne zadania (np. implementacja mechaniki gry, interfejsu, testowanie).
-- **Terminy:** Określenie czasu potrzebnego na każdy etap.
+- **Implementation Stages:** Break down work into specific tasks (e.g., game mechanics implementation, interface design, testing).
+- **Timeline:** Determine the time needed for each stage.
 
-## Kosztorys:
+## Budget:
 
-### Szacunkowe koszty:
+### Estimated Costs:
 
-- **Rozwój aplikacji:** Wg godzin pracy lub zespołu programistów.
-- **Koszty utrzymania:** Serwery, ewentualne opłaty za usługi zewnętrzne, wsparcie techniczne.
+- **Application Development:** Based on developer hours or team.
+- **Maintenance Costs:** Servers, possible external service fees, technical support.
 
 ---
 
